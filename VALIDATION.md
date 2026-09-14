@@ -11,6 +11,7 @@ Data: 15/09/2026. Ambiente: macOS, Python 3.13.7, SQLite.
 - OpenAPI gerado em `schema.yaml`, validado com `--validate --fail-on-warn`, sem falhas ou avisos.
 - Migrations aplicadas com sucesso ao banco local.
 - Análise Ruff e formatação verificadas.
+- Servidor iniciado localmente; Swagger aberto e conferido no navegador. O diálogo jwtAuth mostrou `Name: Authorize`, `In: header` e exigência do prefixo Bearer.
 
 ## Comportamentos exercitados
 

@@ -67,7 +67,7 @@ Obtenha tokens em `POST /users/token/`, enviando `email` e `password`. O retorno
 Authorize: Bearer <access>
 ```
 
-`Authorization` não é o cabeçalho JWT configurado neste projeto. No Swagger, use **Authorize** e informe o token conforme o diálogo. O esquema OpenAPI descreve o cabeçalho personalizado. Para renovar: `POST /users/token/refresh/` com `{"refresh": "<refresh>"}`.
+`Authorization` não é o cabeçalho JWT configurado neste projeto. No Swagger, clique em **Authorize** e, na seção **jwtAuth**, informe `Bearer <access>` completo no campo Value (incluindo o prefixo `Bearer`). O esquema OpenAPI descreve o cabeçalho personalizado. Para renovar: `POST /users/token/refresh/` com `{"refresh": "<refresh>"}`.
 
 A interface navegável também aceita login por sessão, com proteção CSRF. O cadastro não permite definir privilégios de administrador. As senhas são armazenadas com hash e nunca retornadas pela API. `PUT /users/me/` e `PATCH /users/me/` aceitam alteração de senha opcional.
 
