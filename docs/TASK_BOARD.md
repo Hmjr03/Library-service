@@ -1,4 +1,6 @@
-# Plano de entrega — Flex
+# Library-service — Plano de entrega Flex
+
+Nome definido para o repositório GitHub e o quadro Trello: **Library-service**.
 
 Use no Trello as colunas **To Do (Backlog)**, **In Progress (Doing)**, **On Review**, **Done (Completed)**.
 

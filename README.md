@@ -1,4 +1,4 @@
-# Library Service — Mate Academy Flex
+# Library-service — Mate Academy Flex
 
 API de biblioteca em Django REST Framework. Implementa **7 tarefas obrigatórias selecionadas: 1 a 7**, com autenticação JWT, inventário, empréstimos, devoluções, testes e OpenAPI/Swagger. Sem frontend separado: a interface navegável do DRF está disponível.
 
