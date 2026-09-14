@@ -30,3 +30,6 @@ class BorrowingCreateSerializer(serializers.ModelSerializer):
         return create_borrowing(user=self.context["request"].user, **validated_data)
 
 
+class BorrowingFilterSerializer(serializers.Serializer):
+    is_active = serializers.BooleanField(required=False)
+    user_id = serializers.IntegerField(required=False, min_value=1)
