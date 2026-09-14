@@ -4,7 +4,9 @@ Nome definido para o repositório GitHub e o quadro Trello: **Library-service**.
 
 Use no Trello as colunas **To Do (Backlog)**, **In Progress (Doing)**, **On Review**, **Done (Completed)**.
 
-O código das sete tarefas está implementado localmente. A revisão e os PRs remotos ainda precisam acontecer. Por isso, os cartões devem entrar em **On Review**, não em Done, quando o quadro for criado.
+Quadro criado e verificado: [Library-service](https://trello.com/b/aMO6UPAz/library-service).
+
+As quatro colunas estão criadas e os sete cartões estão em **On Review**, com branch, dependências e critérios de aceite. O código está implementado localmente; a publicação no GitHub e a revisão dos PRs ainda estão pendentes.
 
 | Ordem | Cartão | Branch | Depende de | Critério de aceite |
 |---|---|---|---|---|

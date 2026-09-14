@@ -167,7 +167,7 @@ Para PostgreSQL, configure `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, 
 
 ## Organização da entrega
 
-Veja `docs/TASK_BOARD.md` para cartões, dependências e roteiro de revisão. O histórico Git local usa uma branch por tarefa. A criação de um repositório remoto, os PRs separados e o quadro Trello dependem de indicar a conta/destino. Não há PRs ou quadro online criados nesta entrega local.
+Veja `docs/TASK_BOARD.md` para cartões, dependências e roteiro de revisão. O histórico Git local usa uma branch por tarefa. O quadro [Library-service no Trello](https://trello.com/b/aMO6UPAz/library-service) está criado, com quatro colunas e sete cartões em On Review. O repositório remoto e os PRs separados ainda dependem do acesso ao GitHub.
 
 Para enviar à Mate, publique o repositório e abra os PRs de cada tarefa conforme orientação da escola. O histórico local e o bundle preservam as branches; não substituem os links de PRs exigidos na entrega.
 

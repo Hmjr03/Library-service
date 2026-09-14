@@ -29,4 +29,5 @@ O teste de lista sem filtros encontrou um erro de interpretação do parâmetro 
 - Não foi realizado teste de carga de cinco usuários simultâneos nem medição de crescimento anual do banco.
 - Swagger/ReDoc e o esquema foram verificados por requisições de teste; integração remota do GitHub Actions não foi executada.
 - A cobertura não inclui migrations, testes nem configuração administrativa. Não equivale a garantia de ausência de defeitos.
-- GitHub, PRs, Trello e submissão à Mate não foram criados/enviados.
+- Trello criado e conferido em 15/09/2026: https://trello.com/b/aMO6UPAz/library-service — quatro colunas e sete cartões com descrição.
+- GitHub, PRs e submissão à Mate ainda estão pendentes.
