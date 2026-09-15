@@ -19,8 +19,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_spectacular",
     "users",
-    "books",
-    "borrowings",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
