@@ -21,6 +21,7 @@ class StageTests(LibraryFixture):
         self.assertEqual(response.data["book"]["title"], self.book.title)
         self.book.refresh_from_db()
         self.assertEqual(self.book.inventory, 1)
+        self.assertEqual(response.data["book"]["inventory"], self.book.inventory)
 
     def test_no_stock_returns_400_without_creating_borrowing(self):
         self.book.inventory = 0

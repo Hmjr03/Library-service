@@ -16,6 +16,7 @@ def create_borrowing(*, user, book, expected_return_date):
     # Conditional database update prevents inventory from going below zero.
     if not Book.objects.filter(pk=book.pk, inventory__gt=0).update(inventory=F("inventory") - 1):
         raise ValidationError({"book": "This book is out of stock."})
+    book.refresh_from_db(fields=["inventory"])
     return Borrowing.objects.create(
         user=user, book=book, borrow_date=today, expected_return_date=expected_return_date
     )
