@@ -1,0 +1,35 @@
+from datetime import timedelta
+from decimal import Decimal
+
+from django.contrib.auth import get_user_model
+from django.utils import timezone
+from rest_framework.test import APITestCase
+
+from books.models import Book
+from borrowings.models import Borrowing
+
+User = get_user_model()
+PASSWORD = "Library!Practice8392"
+
+
+class LibraryFixture(APITestCase):
+    def setUp(self):
+        self.user = User.objects.create_user("reader@example.com", PASSWORD)
+        self.other = User.objects.create_user("other@example.com", PASSWORD)
+        self.admin = User.objects.create_superuser("admin@example.com", PASSWORD)
+        self.book = Book.objects.create(
+            title="Clean Code",
+            author="Robert Martin",
+            cover="SOFT",
+            inventory=2,
+            daily_fee=Decimal("1.50"),
+        )
+        self.due = timezone.localdate() + timedelta(days=7)
+
+    def login(self, user=None):
+        self.client.force_authenticate(user or self.user)
+
+    def make_borrowing(self, user=None):
+        return Borrowing.objects.create(
+            user=user or self.user, book=self.book, expected_return_date=self.due
+        )
