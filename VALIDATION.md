@@ -27,7 +27,9 @@ O teste de lista sem filtros encontrou um erro de interpretação do parâmetro 
 
 - A suíte foi executada com SQLite. PostgreSQL está configurável, mas não foi executado neste ambiente.
 - Não foi realizado teste de carga de cinco usuários simultâneos nem medição de crescimento anual do banco.
-- Swagger/ReDoc e o esquema foram verificados por requisições de teste; integração remota do GitHub Actions não foi executada.
+- Swagger/ReDoc e o esquema foram verificados por requisições de teste; o workflow também foi executado com sucesso no GitHub Actions após a publicação (ver registro abaixo).
 - A cobertura não inclui migrations, testes nem configuração administrativa. Não equivale a garantia de ausência de defeitos.
 - Trello criado e conferido em 15/09/2026: https://trello.com/b/aMO6UPAz/library-service — quatro colunas e sete cartões com descrição.
-- GitHub, PRs e submissão à Mate ainda estão pendentes.
+- GitHub: repositório privado Hmjr03/Library-service criado; nove branches publicadas; sete PRs de tarefas e um PR de integração criados em rascunho.
+- GitHub Actions: execução do push f75f8f3 concluída com sucesso: https://github.com/Hmjr03/Library-service/actions/runs/34936764934 (49 segundos).
+- Aprovação, merge dos PRs e submissão à Mate ainda estão pendentes.

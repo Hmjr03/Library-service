@@ -6,7 +6,7 @@ Use no Trello as colunas **To Do (Backlog)**, **In Progress (Doing)**, **On Revi
 
 Quadro criado e verificado: [Library-service](https://trello.com/b/aMO6UPAz/library-service).
 
-As quatro colunas estão criadas e os sete cartões estão em **On Review**, com branch, dependências e critérios de aceite. O código está implementado localmente; a publicação no GitHub e a revisão dos PRs ainda estão pendentes.
+As quatro colunas estão criadas e os sete cartões estão em **On Review**, com branch, dependências e critérios de aceite. O código está implementado localmente; as branches e os PRs estão publicados no GitHub; a revisão e integração ainda estão pendentes.
 
 | Ordem | Cartão | Branch | Depende de | Critério de aceite |
 |---|---|---|---|---|
@@ -35,3 +35,20 @@ Abra primeiro `task/03-users-jwt` contra `main`; depois da integração, prossig
 Os testes consolidados foram adicionados na branch final. Antes de submeter cada PR, distribua seus testes correspondentes se a revisão da escola exigir validação independente em cada etapa. As branches intermediárias registram etapas de construção; a versão testada e pronta para executar é `submission/flex-complete`.
 
 A escola exige links dos PRs encerrados para submissão. O ZIP e o Git bundle são materiais locais e não substituem esses links.
+
+## PRs publicados
+
+Repositório privado: https://github.com/Hmjr03/Library-service
+
+| Ordem | Tarefa | PR em rascunho |
+|---|---|---|
+| 1 | #3 Usuários/JWT | https://github.com/Hmjr03/Library-service/pull/1 |
+| 2 | #1 Livros | https://github.com/Hmjr03/Library-service/pull/2 |
+| 3 | #2 Permissões | https://github.com/Hmjr03/Library-service/pull/3 |
+| 4 | #4 Consulta | https://github.com/Hmjr03/Library-service/pull/4 |
+| 5 | #5 Retirada | https://github.com/Hmjr03/Library-service/pull/5 |
+| 6 | #6 Filtros | https://github.com/Hmjr03/Library-service/pull/6 |
+| 7 | #7 Devolução | https://github.com/Hmjr03/Library-service/pull/7 |
+| 8 | Integração, testes e documentação | https://github.com/Hmjr03/Library-service/pull/8 |
+
+Todos apontam para main. Os diffs incluem tarefas anteriores enquanto elas não forem integradas. Revise na ordem indicada. O PR #8 contém a versão integrada testada; as branches intermediárias registram a construção e não foram certificadas isoladamente. Nenhum PR foi aprovado, integrado ou encerrado.
