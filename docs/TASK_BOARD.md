@@ -40,7 +40,7 @@ A escola exige links dos PRs encerrados para submissão. O ZIP e o Git bundle s�
 
 Repositório privado: https://github.com/Hmjr03/Library-service
 
-| Ordem | Tarefa | PR em rascunho |
+| Ordem | Tarefa | PR pronto para revisão |
 |---|---|---|
 | 1 | #3 Usuários/JWT | https://github.com/Hmjr03/Library-service/pull/1 |
 | 2 | #1 Livros | https://github.com/Hmjr03/Library-service/pull/2 |

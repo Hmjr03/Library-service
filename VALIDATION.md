@@ -46,6 +46,10 @@ Correção da revisão: as primeiras branches carregavam apps ainda inexistentes
 - Swagger/ReDoc e o esquema foram verificados por requisições de teste; o workflow também foi executado com sucesso no GitHub Actions após a publicação (ver registro abaixo).
 - A cobertura não inclui migrations, testes nem configuração administrativa. Não equivale a garantia de ausência de defeitos.
 - Trello criado e conferido em 15/09/2026: https://trello.com/b/aMO6UPAz/library-service — quatro colunas e sete cartões com descrição.
-- GitHub: repositório privado Hmjr03/Library-service criado; nove branches publicadas; sete PRs de tarefas e um PR de integração criados em rascunho.
+- GitHub: repositório privado Hmjr03/Library-service criado; nove branches publicadas; sete PRs de tarefas e um PR de integração prontos para revisão.
 - GitHub Actions: execução do push f75f8f3 concluída com sucesso: https://github.com/Hmjr03/Library-service/actions/runs/34936764934 (49 segundos).
 - Aprovação, merge dos PRs e submissão à Mate ainda estão pendentes.
+
+## Estado após revisão
+
+Os oito PRs foram marcados como prontos para revisão. Os testes automáticos dos sete PRs de tarefas passaram; o PR integrado #8 também mostrou todos os checks aprovados para 29bc30d. Aprovação de avaliador e merge continuam pendentes.

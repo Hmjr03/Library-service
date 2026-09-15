@@ -167,9 +167,9 @@ Para PostgreSQL, configure `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, 
 
 ## Organização da entrega
 
-Veja `docs/TASK_BOARD.md` para cartões, dependências e roteiro de revisão. O histórico Git local usa uma branch por tarefa. O quadro [Library-service no Trello](https://trello.com/b/aMO6UPAz/library-service) está criado, com quatro colunas e sete cartões em On Review. O repositório privado [Hmjr03/Library-service](https://github.com/Hmjr03/Library-service) e os [PRs em rascunho](https://github.com/Hmjr03/Library-service/pulls) estão publicados. A versão completa executável está em `submission/flex-complete` e no PR #8; `main` contém a base enquanto aguarda revisão e integração.
+Veja `docs/TASK_BOARD.md` para cartões, dependências e roteiro de revisão. O histórico Git local usa uma branch por tarefa. O quadro [Library-service no Trello](https://trello.com/b/aMO6UPAz/library-service) está criado, com quatro colunas e sete cartões em On Review. O repositório privado [Hmjr03/Library-service](https://github.com/Hmjr03/Library-service) e os [PRs prontos para revisão](https://github.com/Hmjr03/Library-service/pulls) estão publicados. A versão completa executável está em `submission/flex-complete` e no PR #8; `main` contém a base enquanto aguarda revisão e integração.
 
-Para enviar à Mate, conclua a revisão e integração dos PRs conforme orientação da escola. Os PRs ainda estão em rascunho, sem aprovação ou merge. Como o repositório é privado, o avaliador precisará de acesso. Não há avaliadores convidados nesta etapa. Consulte `docs/TASK_BOARD.md` para a sequência e os links.
+Para enviar à Mate, conclua a revisão e integração dos PRs conforme orientação da escola. Os PRs estão prontos para revisão, sem aprovação ou merge. Como o repositório é privado, o avaliador precisará de acesso. Não há avaliadores convidados nesta etapa. Consulte `docs/TASK_BOARD.md` para a sequência e os links.
 
 ## Referências
 
