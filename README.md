@@ -177,3 +177,19 @@ Para enviar à Mate, conclua a revisão e integração dos PRs conforme orienta�
 - Simple JWT (cabeçalho): https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html#auth-header-name
 - OpenAPI: https://drf-spectacular.readthedocs.io/en/stable/customization.html
 - Django: https://docs.djangoproject.com/en/5.2/topics/db/transactions/
+
+## Revisão independente por etapa
+
+As sete branches foram revisadas individualmente. Cada uma tem configuração Django compatível com os módulos que já existem, testes cumulativos em `tests/` e o workflow de qualidade. Foram preservados os commits publicados; as dependências receberam commits de merge.
+
+| PR | Tarefa | Testes locais aprovados | Cobertura |
+|---|---|---:|---:|
+| #1 | Usuários/JWT | 11 | 96% |
+| #2 | Livros | 13 | 96% |
+| #3 | Permissões | 16 | 96% |
+| #4 | Consulta de empréstimos | 20 | 97% |
+| #5 | Retirada | 27 | 98% |
+| #6 | Filtros | 30 | 97% |
+| #7 | Devolução | 34 | 97% |
+
+A versão integrada também executa os 34 testes, sem duplicar a suíte antiga. O teste adicional explicita autenticação e propriedade na devolução. A revisão da escola e a integração dos PRs ainda precisam ocorrer.

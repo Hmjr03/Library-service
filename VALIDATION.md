@@ -4,7 +4,7 @@ Data: 15/09/2026. Ambiente: macOS, Python 3.13.7, SQLite.
 
 ## Resultados executados
 
-- **33 testes aprovados**, em 21,652 segundos na execução final da suíte.
+- **34 testes aprovados** também na versão integrada, em 23,127 segundos, após a distribuição dos testes por etapa.
 - **97% de cobertura total**, incluindo ramificações (242 instruções e 34 ramificações medidas).
 - `manage.py check`: nenhum problema identificado.
 - `makemigrations --check --dry-run`: nenhuma alteração pendente.
@@ -22,6 +22,22 @@ Leitura pública dos livros, escrita restrita a staff, CRUD administrativo, dado
 Autenticação obrigatória para empréstimos, isolamento por usuário, consulta administrativa, filtros ativos/inativos, filtros inválidos, retirada sem estoque, data passada, devolução no mesmo dia, devolução repetida, objeto desatualizado e rollback de retirada quando a criação do registro falha.
 
 O teste de lista sem filtros encontrou um erro de interpretação do parâmetro booleano ausente. A implementação foi corrigida; a suíte completa passou após a correção.
+
+## Revisão das branches
+
+Cada branch passou separadamente por testes, cobertura mínima, Ruff, verificação Django, ausência de migrations pendentes e validação OpenAPI.
+
+| Branch | Testes | Cobertura |
+|---|---:|---:|
+| task/03-users-jwt | 11 | 96% |
+| task/01-books-crud | 13 | 96% |
+| task/02-books-permissions | 16 | 96% |
+| task/04-borrowing-read | 20 | 97% |
+| task/05-borrowing-create | 27 | 98% |
+| task/06-borrowing-filters | 30 | 97% |
+| task/07-borrowing-return | 34 | 97% |
+
+Correção da revisão: as primeiras branches carregavam apps ainda inexistentes. A lista de apps e as rotas agora correspondem ao conteúdo de cada etapa. Os testes e o workflow passaram a acompanhar cada PR. O histórico publicado foi preservado por commits adicionais e merges de dependências.
 
 ## Limites da validação
 

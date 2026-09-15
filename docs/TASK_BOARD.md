@@ -32,7 +32,7 @@ As branches foram organizadas em sequência por dependência. `main` contém a b
 
 Abra primeiro `task/03-users-jwt` contra `main`; depois da integração, prossiga na ordem acima. Para evitar duplicação de alterações no próximo PR, prefira merge que preserve os commits; se usar squash, atualize/rebaseie a branch seguinte. Ao final, integre `submission/flex-complete`, que contém as verificações e documentação consolidadas.
 
-Os testes consolidados foram adicionados na branch final. Antes de submeter cada PR, distribua seus testes correspondentes se a revisão da escola exigir validação independente em cada etapa. As branches intermediárias registram etapas de construção; a versão testada e pronta para executar é `submission/flex-complete`.
+Os testes estão distribuídos por etapa em `tests/`, com workflow de qualidade em todas as branches. Todas as sete etapas passaram individualmente pelos testes, cobertura, formatação, verificações Django e validação OpenAPI. A versão completa permanece em `submission/flex-complete`.
 
 A escola exige links dos PRs encerrados para submissão. O ZIP e o Git bundle são materiais locais e não substituem esses links.
 
@@ -51,4 +51,4 @@ Repositório privado: https://github.com/Hmjr03/Library-service
 | 7 | #7 Devolução | https://github.com/Hmjr03/Library-service/pull/7 |
 | 8 | Integração, testes e documentação | https://github.com/Hmjr03/Library-service/pull/8 |
 
-Todos apontam para main. Os diffs incluem tarefas anteriores enquanto elas não forem integradas. Revise na ordem indicada. O PR #8 contém a versão integrada testada; as branches intermediárias registram a construção e não foram certificadas isoladamente. Nenhum PR foi aprovado, integrado ou encerrado.
+Todos apontam para main. Os diffs incluem tarefas anteriores enquanto elas não forem integradas. Revise na ordem indicada. O PR #8 contém a versão integrada; as sete branches também foram verificadas isoladamente, com 11, 13, 16, 20, 27, 30 e 34 testes cumulativos aprovados. Nenhum PR foi aprovado, integrado ou encerrado.
