@@ -1,5 +1,6 @@
 from rest_framework import mixins, status, viewsets
 from rest_framework.response import Response
+
 from .models import Borrowing
 from .serializers import BorrowingCreateSerializer, BorrowingReadSerializer
 
@@ -18,4 +19,6 @@ class BorrowingViewSet(mixins.CreateModelMixin, viewsets.ReadOnlyModelViewSet):
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        return Response(BorrowingReadSerializer(serializer.save()).data, status=status.HTTP_201_CREATED)
+        return Response(
+            BorrowingReadSerializer(serializer.save()).data, status=status.HTTP_201_CREATED
+        )

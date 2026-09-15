@@ -19,5 +19,3 @@ def create_borrowing(*, user, book, expected_return_date):
     return Borrowing.objects.create(
         user=user, book=book, borrow_date=today, expected_return_date=expected_return_date
     )
-
-
